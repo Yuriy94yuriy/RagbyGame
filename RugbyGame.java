@@ -5,8 +5,6 @@ import java.util.concurrent.ThreadLocalRandom;
 
 public class RugbyGame {
     public static void main(String[] args) {
-
-
         System.out.println("Середній вік гравців Червоної команди: ");
         calculateAverageRed();
         System.out.println("Середній вік гравців Блакитної команди: ");
@@ -23,6 +21,7 @@ public class RugbyGame {
         }
         averageRed = sum / array.length;
         System.out.println(averageRed);
+        System.out.println("Вік гравців Червоної команди: " + Arrays.toString(array));
     }
 
     public static void calculateAverageBlue() {
@@ -35,6 +34,7 @@ public class RugbyGame {
         }
         averageBlue = sum / array.length;
         System.out.println(averageBlue);
+        System.out.println("Вік гравців Блакитної команди: " + Arrays.toString(array));
     }
 
     public static void calculateMediumAge() {
